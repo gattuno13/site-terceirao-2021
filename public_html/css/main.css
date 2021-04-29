@@ -1,6 +1,59 @@
 body {
-    background-color: rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
     font-family: lobster;
-    
+    margin-left: 60px;
+    margin-right: 60px;
+}
+h5{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+/*menu*/
+:root{
+    --co-fundo : rgb(253, 253, 253);
+    --co-principal : rgb(0, 0, 0);
+    --co-hover : rgb(195, 182, 252);
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.dp-menu ul{
+    background-color: var(--co-fundo);
+}
+.dp-menu li{
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a{
+    color: var(--co-principal);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background 3.s;
+}
+.dp-menu ul li a:hover{
+    background-color: var(--co-hover);
+}
+/*hover*/
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: background all 3.s;
+}
+
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display: block;
+}
+.dp-menu ul li {
+font-size: 30px;
 }
 
